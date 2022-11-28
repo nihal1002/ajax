@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <table id="demo">
+                <tr>
+                    <th>id</th>
+                    <th>Title</th>
+                    <th>User id</th>
+                    <th>Completed</th>
+                </tr>
+        </table>
+        <button id="btn" onclick="loadDoc()">click me!</button>
+    </div>
+    <script>
+
+
+        function loadDoc(){
+            fetch('https://fakestoreapi.com/products')
+            .then(response=>response.json())
+            // .then(json=>console.log(json))
+            .then(json=>{
+                var demo1 = document.getElementById("demo");
+
+                for(i in json){
+                    var tr = document.createElement("tr");
+                    var obj = json[i]
+
+                    for(j in obj){
+                        var td = document.createElement("td");
+                        var d = document.createTextNode(obj[j]);
+                        tr.appendChild(td);
+                        td.appendChild(d);
+                        // tr.appendChild(td);
+                    }
+                    let demo2 = document.getElementById("demo");
+                    demo2.appendChild(tr);
+                }
+            })
+        }
+    </script>
+</body>
+</html>

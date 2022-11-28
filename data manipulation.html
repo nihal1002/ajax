@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data manipulation</title>
+</head>
+<body>
+    <script>
+        let arr = [
+            {name: "ravish", friend: "haria", age:23},
+            {name: "Nihu", friend: "nobita", age:34},
+            {name: "Sayali", friend: "mohan", age:28},
+            {name: "junaid", friend: "rabina", age:56},
+            {name: "harshal", friend: "vivek", age:78},
+            {name: "minal", friend: "babe", age:89}
+        ];
+        let age1 = arr.filter((i)=>{
+            if(i.age > 50){
+                return console.log(i.name);
+            }
+        })
+
+        // for(i in arr){
+        //     if(arr[i].age > 50){
+        //         console.log(arr[i].name);
+        //     }
+        // }
+    </script>
+</body>
+</html>

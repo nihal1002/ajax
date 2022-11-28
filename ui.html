@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css">
+</head>
+<body>
+    <div id="aco">
+        <h1>html5</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et sint nesciunt voluptatem magnam unde id eaque dolores atque exercitationem, excepturi est modi illo enim nemo quae perferendis incidunt? Iure cumque harum nobis? Ad aliquid, sapiente earum dolor obcaecati possimus totam dolore quos, deleniti quidem enim! Impedit nobis alias sapiente possimus aperiam, cumque laudantium natus enim molestias incidunt molestiae distinctio corrupti praesentium doloremque vero dicta maxime porro similique.
+                 Voluptatibus facilis nostrum quis eveniet! Necessitatibus quisquam accusantium dolores dolorem esse? Beatae, iusto fugit? Maxime, quidem eveniet vel eius eos dolores ipsum aperiam distinctio neque, quisquam quo suscipit totam assumenda sed. Magni, ea?</p>
+        <h1>CSS3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rem cum aliquid, id natus praesentium nam dolor quaerat saepe quas nihil delectus ipsum earum tempora nulla molestiae obcaecati ad possimus eos maiores! Recusandae numquam aut ipsum autem reprehenderit molestiae, nihil expedita, pariatur ex repudiandae incidunt in quos cumque rerum eveniet?</p>
+        <h1>javascript</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aspernatur debitis eius inventore beatae id tempore porro voluptas consectetur vero, temporibus eligendi tempora cumque veritatis asperiores ea illo quam dicta pariatur et dolorum exercitationem. Nisi, repellendus at iste praesentium, dolorum itaque pariatur cum, doloremque et iusto magni. 
+            
+            
+            Veritatis totam ullam rem alias magnam quod porro ratione dicta minus ipsum nulla pariatur facilis vel vero ut iure impedit, doloribus a in, recusandae reiciendis non soluta similique.</p>
+        <h1>jquery</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum obcaecati iusto tenetur perspiciatis magnam, excepturi est numquam. Aliquam similique provident dolore eaque quod voluptates minima?</p>
+    </div>
+    <br>
+    <div>
+        <label for="city">city</label>
+        <input type="text" id="auto">
+    </div>
+    <br>
+    <div id="dia" style="display: none;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ab delectus ullam dignissimos molestias, unde fugiat laborum deserunt animi odio architecto et, recusandae autem inventore iusto alias nisi repellendus quasi!</div>
+    <div id="date"> </div>
+    <p id="ask">open dialog</p>
+
+    <div id="tabs">
+        <ul>
+            <li> <a href="#first">first</a></li>
+            <li><a href="#second">second</a></li>
+            <li><a href="#third">third</a></li>
+            <li><a href="#forth">fourth</a></li>
+            <li><a href="#fifth">fifth</a></li>
+        </ul>
+
+        <div id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, incidunt sed repudiandae doloremque cupiditate iusto vel porro aspernatur vero delectus pariatur ea error consequuntur recusandae tenetur voluptate. Sapiente velit voluptates illo, fuga labore reiciendis blanditiis sint impedit nisi ipsum, atque enim! Necessitatibus deleniti explicabo velit perspiciatis accusantium culpa labore incidunt, deserunt minima consequuntur quaerat recusandae odit dolorum beatae at voluptatum sequi laudantium fugiat numquam ipsam, pariatur ipsa quasi adipisci ratione? Facilis minima alias ea voluptates.</div>
+
+        <div id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur neque quas sunt tempora voluptas nostrum recusandae, fugiat eius, ipsum cumque rerum magnam nobis quasi.</div>
+
+        <div id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, rem? Pariatur, perferendis corporis fugit veritatis quas saepe sunt earum praesentium expedita nulla voluptas officia! Nostrum reiciendis obcaecati ex reprehenderit cumque dolorum aspernatur soluta natus ratione harum corrupti at repellat amet tempora fuga eveniet officiis ipsam totam iste, eius hic quasi! Reprehenderit voluptatem atque assumenda sequi, ad distinctio? Laborum nemo, pariatur consectetur fugit, corrupti id quo recusandae ipsam perferendis temporibus culpa. Dolorem a repellat reiciendis illo molestias maxime voluptas nihil beatae, iusto quasi unde consectetur corporis repellendus possimus ut corrupti dolor consequatur neque temporibus eius ad fugit! Minus excepturi maxime sunt.</div>
+
+        <div id="forth">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis porro quod suscipit asperiores veniam natus iure voluptas quo ex voluptatum, magnam nulla, totam numquam hic ducimus et. Nam sed, magnam repellat natus iure quis, vitae consectetur nesciunt laudantium velit assumenda facere obcaecati exercitationem. Fuga, reprehenderit. Ipsum molestias ex praesentium.</div>
+
+        <div id="fifth">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore dolores. Molestiae accusamus dignissimos aliquam id, nobis labore rem eaque unde cumque excepturi totam nisi, nihil fugit quaerat vero dolorem dicta quia nesciunt, ad deleniti. Asperiores sequi nemo vitae tenetur, optio voluptatibus corrupti harum magnam consequatur qui facilis. Eius sed repellat ducimus dolorem, voluptate assumenda aspernatur deserunt in quod aliquam reprehenderit odio eos provident vitae magni non obcaecati voluptatum accusantium numquam, eligendi nostrum architecto dolore.</div>
+    </div>
+    <br>
+    <div id="slide" style="width: 20%;"></div>
+
+
+
+    <script>
+        $(function(){
+            $("#date").datepicker();
+            $("#aco").accordion();
+            $("#auto").autocomplete({
+                source:["mumbai", "thane", "pune", "bangalore", "hyderabad"]
+            })
+           $("#ask").click(function(){
+            $("#dia").dialog();
+           })
+           $("#tabs").tabs();
+           $("#slide").slider();
+        });
+    </script>
+</body>
+</html>
